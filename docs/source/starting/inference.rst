@@ -52,6 +52,7 @@ The code below shows a way to do this:
     # Get an optical flow model. As as example, we will use RAFT Small
     # with the weights pretrained on the FlyingThings3D dataset
     model = ptlflow.get_model('raft_small', ckpt_path='things')
+    model.eval()
 
     # Load the images
     images = [
